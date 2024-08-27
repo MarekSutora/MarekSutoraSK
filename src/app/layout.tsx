@@ -1,6 +1,12 @@
+import React from "react";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { cn } from "@/lib/utils";
+import FireEffect from "@/components/FireEffect";
+import Background from "@/components/Background";
+import ThemeSwitcher from "@/components/ThemeSwitcher";
+import Providers from "./Providers";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,8 +21,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html
+      suppressHydrationWarning
+      lang="en"
+      className="m-0 p-0 overflow-x-hidden w-full h-full"
+    >
+      <Providers>
+        <body className={cn(inter, "m-0 p-0 overflow-x-hidden w-full h-full")}>
+          <div className="w-full h-full">
+            
+            <FireEffect />
+            <Background>{children} </Background>
+          </div>
+        </body>
+      </Providers>
     </html>
   );
 }
