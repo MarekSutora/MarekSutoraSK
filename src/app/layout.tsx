@@ -29,9 +29,8 @@ export default function RootLayout({
       <Providers>
         <body className={cn(inter, "m-0 p-0 overflow-x-hidden w-full h-full")}>
           <div className="w-full h-full">
-            
-            <FireEffect />
-            <Background>{children} </Background>
+            <Background />
+            {children}
           </div>
         </body>
       </Providers>
