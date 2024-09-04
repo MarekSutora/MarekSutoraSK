@@ -7,6 +7,8 @@ import FireEffect from "@/components/FireEffect";
 import Background from "@/components/Background";
 import ThemeSwitcher from "@/components/ThemeSwitcher";
 import Providers from "./Providers";
+import AnimatedCursor from "react-animated-cursor";
+import CustomCursor from "@/components/CustomCursor";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,14 +28,16 @@ export default function RootLayout({
       lang="en"
       className="m-0 p-0 overflow-x-hidden w-full h-full"
     >
-      <Providers>
-        <body className={cn(inter, "m-0 p-0 overflow-x-hidden w-full h-full")}>
+      <body className={cn(inter, "m-0 p-0 overflow-x-hidden w-full h-full")}>
+      <CustomCursor />
+        <Providers>
           <div className="w-full h-full">
             <Background />
+
             {children}
           </div>
-        </body>
-      </Providers>
+        </Providers>
+      </body>
     </html>
   );
 }
