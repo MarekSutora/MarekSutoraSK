@@ -28,9 +28,10 @@ export default function RootLayout({
       lang="en"
       className="m-0 p-0 overflow-x-hidden w-full h-full"
     >
+      
       <body className={cn(inter, "m-0 p-0 overflow-x-hidden w-full h-full")}>
-      <CustomCursor />
         <Providers>
+          <CustomCursor />
           <div className="w-full h-full">
             <Background />
 

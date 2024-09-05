@@ -2,9 +2,9 @@
 
 import ThemeSwitcher from "@/components/ThemeSwitcher";
 import { cn } from "@/lib/utils";
-import { Fredericka_the_Great } from "next/font/google";
+import { Love_Ya_Like_A_Sister } from "next/font/google";
 
-const fredericka_the_Great = Fredericka_the_Great({
+const fredericka_the_Great = Love_Ya_Like_A_Sister({
   subsets: ["latin"],
   weight: "400",
 });
@@ -13,12 +13,14 @@ export default function Home() {
   return (
     <main className="w-full h-full flex flex-col">
       <ThemeSwitcher />
-      <div className={cn(
-          "w-full h-full flex flex-col justify-center items-center text-black text-huge font-bold",
+      <div
+        className={cn(
+          "w-full h-full flex flex-col items-center text-black font-bold dark:text-zinc-300  drop-shadow-2xl pt-28",
           fredericka_the_Great.className
-        )}>
-        <p>Marek</p>
-        <p>Šútora</p>
+        )}
+      >
+        <p className="text-huge">Marek Šútora</p>
+        <p className="text-6xl">Fullstack Web Developer</p>
       </div>
     </main>
   );
