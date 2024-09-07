@@ -1,6 +1,12 @@
+import { Color, Vector3 } from "three";
 import { type ClassValue, clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
 
+export const hexToRgb = (hex: string) => {
+  const color = new Color(hex);
+
+  return new Vector3(color.r, color.g, color.b);
+};
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }

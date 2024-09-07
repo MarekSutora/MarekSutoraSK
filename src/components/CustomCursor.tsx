@@ -15,6 +15,7 @@ const CustomCursor = () => {
       outerAlpha={0.2}
       innerScale={0.5}
       outerScale={5}
+      trailingSpeed={0}
     />
   );
 };

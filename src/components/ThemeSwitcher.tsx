@@ -1,5 +1,3 @@
-"use client";
-
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 import { SunIcon } from "@heroicons/react/24/outline";
@@ -17,25 +15,28 @@ const ThemeSwitcher = () => {
     return null;
   }
 
-  const setThemeHandler = () => {
+  const handleSetTheme = () => {
     if (theme === "dark") {
       setTheme("light");
     } else {
       setTheme("dark");
     }
-    console.log("theme", theme);
   };
 
-  const renderThemeChanger = () => {
-    if (!mounted) return null;
-    if (theme === "dark") {
-      return <button onClick={setThemeHandler}>Light Mode</button>;
-    } else {
-      return <button onClick={setThemeHandler}>Dark Mode</button>;
-    }
-  };
-
-  return <>{renderThemeChanger()}</>;
+  return (
+    <div className="fixed top-3 right-3 z-10">
+      <button
+        onClick={handleSetTheme}
+        className="p-2 rounded-full bg-zinc-300 dark:bg-zinc-900"
+      >
+        {theme === "dark" ? (
+          <SunIcon className="w-6 h-6 text-zinc-900 dark:text-zinc-300" />
+        ) : (
+          <MoonIcon className="w-6 h-6 text-zinc-900 dark:text-zinc-300" />
+        )}
+      </button>
+    </div>
+  );
 };
 
 export default ThemeSwitcher;

@@ -3,12 +3,10 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
-import FireEffect from "@/components/FireEffect";
 import Background from "@/components/Background";
-import ThemeSwitcher from "@/components/ThemeSwitcher";
 import Providers from "./Providers";
-import AnimatedCursor from "react-animated-cursor";
 import CustomCursor from "@/components/CustomCursor";
+import FluidDistortion from "@/components/Fluid/FluidDistortion";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,18 +24,17 @@ export default function RootLayout({
     <html
       suppressHydrationWarning
       lang="en"
-      className="m-0 p-0 overflow-x-hidden w-full h-full"
+      className="m-0 p-0 overflow-x-hidden w-full h-full relative"
     >
-      
       <body className={cn(inter, "m-0 p-0 overflow-x-hidden w-full h-full")}>
         <Providers>
           <CustomCursor />
-          <div className="w-full h-full">
+          <div className="w-full h-full z-50">
             <Background />
-
             {children}
           </div>
         </Providers>
+        <FluidDistortion />
       </body>
     </html>
   );
