@@ -1,3 +1,5 @@
+"use client";
+
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 import { SunIcon } from "@heroicons/react/24/outline";
@@ -24,18 +26,16 @@ const ThemeSwitcher = () => {
   };
 
   return (
-    <div className="fixed top-3 right-3 z-10">
-      <button
-        onClick={handleSetTheme}
-        className="p-2 rounded-full bg-zinc-300 dark:bg-zinc-900"
-      >
-        {theme === "dark" ? (
-          <SunIcon className="w-6 h-6 text-zinc-900 dark:text-zinc-300" />
-        ) : (
-          <MoonIcon className="w-6 h-6 text-zinc-900 dark:text-zinc-300" />
-        )}
-      </button>
-    </div>
+    <button
+      onClick={handleSetTheme}
+      className="p-2 rounded-full bg-zinc-300 dark:bg-zinc-900 fixed top-3 right-3 z-10"
+    >
+      {theme === "dark" ? (
+        <SunIcon className="w-6 h-6 text-zinc-900 dark:text-zinc-300" />
+      ) : (
+        <MoonIcon className="w-6 h-6 text-zinc-900 dark:text-zinc-300" />
+      )}
+    </button>
   );
 };
 

@@ -15,7 +15,6 @@ const FluidDistortion = () => {
         height: "100vh",
         width: "100vw",
         zIndex: 1,
-        overflow: "none",
         opacity: 0.15,
       }}
     >
@@ -26,13 +25,13 @@ const FluidDistortion = () => {
           distortion={0.8}
           curl={0.4}
           swirl={4}
-          fluidColor="#801110"
+          // fluidColor="#801110"
           blend={1}
           showBackground={false}
-          rainbow={false}
+          rainbow={true}
           pressure={0.57}
-          densityDissipation={1}
-          velocityDissipation={1}
+          densityDissipation={0.99}
+          velocityDissipation={0.99}
           radius={0.52}
         />
       </EffectComposer>

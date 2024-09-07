@@ -1,12 +1,24 @@
 "use client";
 
 import { useTheme } from "next-themes";
-import React from "react";
-import AnimatedCursor from "react-animated-cursor";
+import React, { useEffect, useState } from "react";
+import dynamic from "next/dynamic";
 
+const AnimatedCursor = dynamic(() => import("react-animated-cursor"), {
+  ssr: false,
+});
 const CustomCursor = () => {
+  const [mounted, setMounted] = useState(false);
   const { resolvedTheme } = useTheme();
-  console.log(resolvedTheme);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return null;
+  }
+
   return (
     <AnimatedCursor
       innerSize={10}
@@ -15,7 +27,7 @@ const CustomCursor = () => {
       outerAlpha={0.2}
       innerScale={0.5}
       outerScale={5}
-      trailingSpeed={0}
+      trailingSpeed={1}
     />
   );
 };
