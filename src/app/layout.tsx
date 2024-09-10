@@ -5,9 +5,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import Background from "@/components/Background";
 import Providers from "./Providers";
-import dynamic from "next/dynamic";
-
-const CustomCursor = dynamic(() => import("@/components/CustomCursor"), {ssr: false});
+import CustomCursor from "@/components/CustomCursor";
 
 const inter = Inter({ subsets: ["latin"] });
 

@@ -14,7 +14,7 @@ const FluidDistortion = () => {
         left: 0,
         height: "100vh",
         width: "100vw",
-        zIndex: 1,
+        zIndex: 21,
         opacity: 0.15,
       }}
     >

@@ -28,7 +28,7 @@ const ThemeSwitcher = () => {
   return (
     <button
       onClick={handleSetTheme}
-      className="p-2 rounded-full bg-zinc-300 dark:bg-zinc-900 fixed top-3 right-3 z-10"
+      className="p-2 rounded-full bg-zinc-300 dark:bg-zinc-900 fixed top-3 right-3 z-50"
     >
       {theme === "dark" ? (
         <SunIcon className="w-6 h-6 text-zinc-900 dark:text-zinc-300" />
