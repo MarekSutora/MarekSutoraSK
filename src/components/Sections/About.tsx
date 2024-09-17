@@ -4,7 +4,7 @@ type Props = {};
 
 const About = (props: Props) => {
   return (
-    <section className="w-full h-full">
+    <div className="p-[1px] gap-3 flex flex-col">
       <p className="text-lg">
         I am a graduate of the Faculty of Management and Informatics with
         experience in front-end and back-end web application development and
@@ -22,7 +22,7 @@ const About = (props: Props) => {
         I also like reading non-fiction literature and occasionally playing
         computer games.
       </p>
-    </section>
+    </div>
   );
 };
 

@@ -12,10 +12,14 @@ const FluidDistortion = () => {
         position: "fixed",
         top: 0,
         left: 0,
+        right: 0,
+        bottom: 0,
         height: "100vh",
         width: "100vw",
-        zIndex: 21,
+        zIndex: 1,
         opacity: 0.15,
+        pointerEvents: "none",
+        overflow: "auto",
       }}
     >
       <EffectComposer>
@@ -33,6 +37,7 @@ const FluidDistortion = () => {
           densityDissipation={0.99}
           velocityDissipation={0.99}
           radius={0.52}
+          
         />
       </EffectComposer>
     </Canvas>
