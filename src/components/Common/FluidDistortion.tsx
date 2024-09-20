@@ -2,7 +2,7 @@
 
 import { EffectComposer } from "@react-three/postprocessing";
 
-import { Fluid } from "@/lib/Fluid";
+import { Fluid } from "@/lib/FluidEffect/Fluid";
 import { Canvas } from "@react-three/fiber";
 
 const FluidDistortion = () => {
@@ -37,7 +37,6 @@ const FluidDistortion = () => {
           densityDissipation={0.99}
           velocityDissipation={0.99}
           radius={0.52}
-          
         />
       </EffectComposer>
     </Canvas>

@@ -2,7 +2,7 @@ import React from "react";
 import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
 import "./globals.css";
-import { cn } from "@/lib/utils";
+import { cn } from "@/lib/FluidEffect/utils";
 import Background from "@/components/Common/Background";
 import Providers from "./Providers";
 import CustomCursor from "@/components/Common/CustomCursor";
@@ -28,10 +28,10 @@ export default function RootLayout({
       lang="en"
       className={cn(
         manrope.className,
-        "m-0 p-0 overflow-x-hidden w-full h-full"
+        "m-0 h-full w-full overflow-x-hidden p-0",
       )}
     >
-      <body className="m-0 p-0 overflow-x-hidden">
+      <body className="m-0 overflow-x-hidden p-0">
         <Providers>
           <CustomCursor />
 
