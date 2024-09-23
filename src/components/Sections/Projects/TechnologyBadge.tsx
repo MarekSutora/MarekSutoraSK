@@ -10,10 +10,10 @@ type Props = {
 const TechnologyBadge = ({
   iconName,
   technologyName,
-  iconSize = 22,
+  iconSize = 19,
 }: Props) => {
   return (
-    <div className="flex h-full flex-row items-center gap-1 rounded-xl border-[1px] border-neutral-700 bg-neutral-800 p-1 px-2 text-xs text-gray-100 shadow-md transition-all duration-300 dark:border-zinc-300 dark:bg-zinc-200 dark:text-black">
+    <div className="flex h-full flex-row items-center gap-1 rounded-full border-[1px] border-neutral-700 bg-neutral-800 p-1 px-2 text-xs text-gray-100 transition-all duration-300 dark:border-zinc-300 dark:bg-zinc-200 dark:text-black font-medium">
       {iconName && <Icon nameIcon={iconName} propsIcon={{ size: iconSize }} />}
       <span>{technologyName}</span>
     </div>

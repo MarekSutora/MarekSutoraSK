@@ -41,7 +41,7 @@ export const projects = [
       "A movie database application where users can search for movies, view details, and manage a list of favorites. It integrates with the OMDB API and features infinite scrolling, responsive design, and local storage for favorite movie management.",
     technologies: {
       all: [
-        { name: "React", icon: "SiReact" },
+        { name: "React", icon: "FaReact" },
         { name: "TypeScript", icon: "SiTypescript" },
         { name: "Chakra UI", icon: "SiChakraui" },
       ],
