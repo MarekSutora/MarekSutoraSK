@@ -52,22 +52,22 @@ export const projects = [
     sourceCode: "https://github.com/MarekSutora/movie-database",
     liveDemo: "https://movie-database-roan.vercel.app",
   },
-  {
-    title: "Portfolio Website",
-    description:
-      "A personal portfolio website showcasing my projects, skills, and experience. It features a dark theme, animations, and a responsive design.",
-    technologies: {
-      all: [
-        { name: "Next.js", icon: "SiNextdotjs" },
-        { name: "React", icon: "FaReact" },
-        { name: "TypeScript", icon: "SiTypescript" },
-        { name: "Tailwind CSS", icon: "SiTailwindcss" },
-      ],
-    },
-    duration: "2024",
-    icon: "FaUser",
-    image: "/projects/prtfl.png",
-    sourceCode: "https://github.com/MarekSutora/MarekSutoraSK",
-    liveDemo: "https://www.mareksutora.sk",
-  },
+  // {
+  //   title: "Portfolio Website",
+  //   description:
+  //     "A personal portfolio website showcasing my projects, skills, and experience. It features a dark theme, animations, and a responsive design.",
+  //   technologies: {
+  //     all: [
+  //       { name: "Next.js", icon: "SiNextdotjs" },
+  //       { name: "React", icon: "FaReact" },
+  //       { name: "TypeScript", icon: "SiTypescript" },
+  //       { name: "Tailwind CSS", icon: "SiTailwindcss" },
+  //     ],
+  //   },
+  //   duration: "2024",
+  //   icon: "FaUser",
+  //   image: "/projects/prtfl.png",
+  //   sourceCode: "https://github.com/MarekSutora/MarekSutoraSK",
+  //   liveDemo: "https://www.mareksutora.sk",
+  // },
 ];
