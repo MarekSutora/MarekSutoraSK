@@ -1,7 +1,7 @@
 import { Effect } from 'postprocessing';
 import { Texture, Uniform, Vector3 } from 'three';
 import { EffectProps } from '../types';
-import { hexToRgb } from '../utils';
+import { hexToRgb } from '../../utils';
 
 import fragmentShader from '../glsl/post.frag';
 

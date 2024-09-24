@@ -1,33 +1,33 @@
-"use client";
-
-import About from "@/components/About/About";
-import FluidDistortion from "@/components/Fluid/FluidDistortion";
-import ThemeSwitcher from "@/components/ThemeSwitcher";
-import { cn } from "@/lib/utils";
-import { Love_Ya_Like_A_Sister } from "next/font/google";
-
-const fredericka_the_Great = Love_Ya_Like_A_Sister({
-  subsets: ["latin"],
-  weight: "400",
-});
+import FluidDistortion from "@/components/Common/FluidDistortion";
+import ThemeSwitcher from "@/components/Common/ThemeSwitcher";
+import About from "@/components/Sections/About";
+import Education from "@/components/Sections/Education/Education";
+import Links from "@/components/Sections/Links";
+import Projects from "@/components/Sections/Projects/Projects";
+import SectionWrapper from "@/components/Sections/SectionWrapper";
+import Title from "@/components/Sections/Title";
 
 export default function Home() {
   return (
-    <main className="w-full h-full z-20 dark:text-zinc-200 text-black relative">
+    <main className="z-[1] h-full w-full text-black dark:text-zinc-300 pb-5">
       <ThemeSwitcher />
-      <FluidDistortion />
-      <div className="flex flex-col justify-center items-center h-full md:w-5/6 w-11/12 m-auto">
-        <section
-          className={cn(
-            "w-full h-full font-bold drop-shadow-2xl md:pt-44 pt-36 select-none text-center",
-            fredericka_the_Great.className
-          )}
-        >
-          <p className="md:text-huge text-6xl">Marek Šútora</p>
-          <p className="md:text-6xl text-3xl">Fullstack Web Developer</p>
-        </section>
-        <About />
+
+      <div className="m-auto flex w-11/12 flex-col items-center gap-14 pb-14 md:w-5/6">
+        <Title />
+        {/* <Links /> */}
       </div>
+      <div className="m-auto flex w-11/12 flex-col items-center gap-6 md:w-5/6">
+        <SectionWrapper title="About">
+          <About />
+        </SectionWrapper>
+        <SectionWrapper title="Education">
+          <Education />
+        </SectionWrapper>
+        <SectionWrapper title="Projects">
+          <Projects />
+        </SectionWrapper>
+      </div>
+      <FluidDistortion />
     </main>
   );
 }

@@ -1,16 +1,20 @@
 import React from "react";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Manrope } from "next/font/google";
 import "./globals.css";
-import { cn } from "@/lib/utils";
-import Background from "@/components/Background";
+import Background from "@/components/Common/Background";
 import Providers from "./Providers";
-import CustomCursor from "@/components/CustomCursor";
+import CustomCursor from "@/components/Common/CustomCursor";
+import FluidDistortion from "@/components/Common/FluidDistortion";
+import { cn } from "@/lib/utils";
 
-const inter = Inter({ subsets: ["latin"] });
-
+const manrope = Manrope({ subsets: ["latin"] });
+//Rubik, Anek_Devanagari, Manrope, Arimo
 export const metadata: Metadata = {
   title: "Marek Šútora",
+  icons: {
+    icon: "/ms.svg",
+  },
 };
 
 export default function RootLayout({
@@ -22,15 +26,17 @@ export default function RootLayout({
     <html
       suppressHydrationWarning
       lang="en"
-      className="m-0 p-0 overflow-x-hidden w-full h-full"
+      className={cn(
+        manrope.className,
+        "m-0 h-full w-full overflow-x-hidden p-0",
+      )}
     >
-      <body className={cn(inter, "m-0 p-0 overflow-x-hidden w-full h-full")}>
+      <body className="m-0 overflow-x-hidden p-0">
         <Providers>
           <CustomCursor />
-          <div className="w-full h-full">
-            <Background />
-            {children}
-          </div>
+
+          <Background />
+          {children}
         </Providers>
       </body>
     </html>

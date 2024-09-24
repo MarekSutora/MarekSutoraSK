@@ -13,7 +13,7 @@ export function cn(...inputs: ClassValue[]) {
 
 export const getErrorMessage = (
   error: unknown,
-  defaultMessage = "Something went wrong."
+  defaultMessage = "Something went wrong.",
 ): string => {
   let message: string;
 

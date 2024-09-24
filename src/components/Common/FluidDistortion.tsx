@@ -2,7 +2,7 @@
 
 import { EffectComposer } from "@react-three/postprocessing";
 
-import { Fluid } from "@/lib/Fluid";
+import { Fluid } from "@/lib/FluidEffect/Fluid";
 import { Canvas } from "@react-three/fiber";
 
 const FluidDistortion = () => {
@@ -12,10 +12,14 @@ const FluidDistortion = () => {
         position: "fixed",
         top: 0,
         left: 0,
+        right: 0,
+        bottom: 0,
         height: "100vh",
         width: "100vw",
-        zIndex: 21,
+        zIndex: 1,
         opacity: 0.15,
+        pointerEvents: "none",
+        overflow: "auto",
       }}
     >
       <EffectComposer>
