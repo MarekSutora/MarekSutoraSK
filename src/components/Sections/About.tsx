@@ -47,16 +47,19 @@ const About = () => {
         </a>
       </div>
       <p className="text-lg">
-        Hey, I am Marek and I am a web developer with
-        experience in both frontend and backend development as well as
-        working with databases. In each of these areas, I have worked with
-        various technologies and tools. I also have experience with working in a team and agile software development.
+        Hey, I am Marek and I am a web developer with experience in both
+        frontend and backend development.
+        In each of these areas, I have worked with various technologies, programming languages and tools.
+        I also have experience with working in a team and agile software
+        development.
       </p>
       <p className="text-lg">
         I consider myself a reliable and hardworking person who has no problem
-        learning different new and interesting technologies and tools. In my
-        free time, I enjoy working out, listening to music, watching TV shows,
-        movies, and various sports.
+        learning different new and interesting technologies and tools.
+      </p>
+      <p className="text-lg">
+        In my free time, I enjoy working out, listening to music, watching TV
+        shows, movies, and various sports.
       </p>
     </div>
   );

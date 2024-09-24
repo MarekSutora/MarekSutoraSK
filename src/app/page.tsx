@@ -9,7 +9,7 @@ import Title from "@/components/Sections/Title";
 
 export default function Home() {
   return (
-    <main className="z-[1] h-full w-full text-black dark:text-zinc-300">
+    <main className="z-[1] h-full w-full text-black dark:text-zinc-300 pb-5">
       <ThemeSwitcher />
 
       <div className="m-auto flex w-11/12 flex-col items-center gap-14 pb-14 md:w-5/6">

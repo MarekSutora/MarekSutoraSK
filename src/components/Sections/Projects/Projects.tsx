@@ -3,6 +3,7 @@ import { projects } from "@/lib/constants";
 import Image from "next/image";
 import TechnologyBadge from "./TechnologyBadge";
 import ShimmerLink from "@/components/Common/ShimmerLink";
+import { IoMdDownload } from "react-icons/io";
 
 const Projects = () => {
   return (
@@ -67,8 +68,8 @@ const Projects = () => {
                 </ul>
               )}
             </div>
-            <div className="flex flex-col justify-between py-2 md:flex-row gap-2">
-              <div className="flex w-full flex-col gap-1 md:w-[45%]">
+            <div className="flex flex-col justify-between gap-2 py-2 md:flex-row">
+              <div className="mx-auto flex w-full flex-col gap-1 md:w-[45%]">
                 <p className="text-base">{project.description}</p>
               </div>
               <div className="flex w-full flex-col gap-1 md:w-[46%]">
@@ -120,6 +121,16 @@ const Projects = () => {
           </div>
         );
       })}
+      <div className="flex flex-row justify-center items-center gap-3 rounded-md border-[1px] border-zinc-300 bg-zinc-200 p-1 text-black shadow-sm dark:border-neutral-900 dark:bg-neutral-800 dark:text-gray-100">
+        For more details and more projects check out this PDF file:
+        <a
+          href="./projects-marek-sutora.pdf"
+          className="z-50 flex flex-row items-center gap-1 rounded-2xl border-[1px] border-zinc-300 bg-zinc-200 px-2 py-1 shadow-sm transition-all duration-300 hover:bg-zinc-300 dark:border-neutral-800 dark:bg-neutral-900 dark:text-gray-300 dark:hover:bg-neutral-800"
+          rel="noopener noreferrer"
+        >
+          <IoMdDownload size={24} /> <span>My Projects</span>
+        </a>
+      </div>
     </div>
   );
 };
