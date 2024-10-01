@@ -21,10 +21,10 @@ const FriLogo = (props: Props) => {
   }
 
   if (theme === "dark") {
-    return <Image src={LogoW} alt="uniza" width={370} />;
+    return <Image src={LogoW} alt="uniza" width={370} priority/>;
   }
 
-  return <Image src={LogoB} alt="uniza" width={370} />;
+  return <Image src={LogoB} alt="uniza" width={370} priority/>;
 };
 
 export default FriLogo;

@@ -1,5 +1,5 @@
 import React from "react";
-import { Icon } from "../Icon";
+import { Icon } from "../../Common/Icon";
 
 type Props = {
   iconName?: string;
@@ -13,7 +13,7 @@ const TechnologyBadge = ({
   iconSize = 19,
 }: Props) => {
   return (
-    <div className="flex h-full flex-row items-center gap-1 rounded-full border-[1px] border-neutral-700 bg-neutral-800 p-1 px-2 text-xs text-gray-100 transition-all duration-300 dark:border-zinc-300 dark:bg-zinc-200 dark:text-black font-medium">
+    <div className="flex h-full flex-row items-center gap-1 rounded-full border-[1px] border-neutral-700 bg-neutral-800 p-1 px-2 text-xs font-medium text-gray-100 transition-all duration-300 dark:border-zinc-300 dark:bg-zinc-200 dark:text-black">
       {iconName && <Icon nameIcon={iconName} propsIcon={{ size: iconSize }} />}
       <span>{technologyName}</span>
     </div>

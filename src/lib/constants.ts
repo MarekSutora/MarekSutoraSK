@@ -71,3 +71,34 @@ export const projects = [
   //   liveDemo: "https://www.mareksutora.sk",
   // },
 ];
+
+export const education = [
+  {
+    university: "University of Žilina",
+    faculty: "Faculty of Management Science and Informatics",
+    duration: "2018 - 2021",
+    degree: "Bachelor's degree in Informatics",
+    description:
+      "The Bachelor's program in Informatics provided me with a solid foundation in programming, algorithms, and data structures. During this period, I developed multiple projects in web development and software engineering.",
+    technologies: [
+      { name: "C++", icon: "FaCode" },
+      { name: "Java", icon: "FaJava" },
+      { name: "HTML/CSS", icon: "FaHtml5" },
+      { name: "JavaScript", icon: "FaJsSquare" },
+    ],
+  },
+  {
+    university: "University of Žilina",
+    faculty: "Faculty of Management Science and Informatics",
+    duration: "2021 - 2023",
+    degree: "Master's degree in Biomedical Informatics",
+    description:
+      "The Master's program in Biomedical Informatics allowed me to specialize in medical data analysis, machine learning, and data-driven healthcare applications. I worked on several research projects involving medical imaging and bioinformatics.",
+    technologies: [
+      { name: "Python", icon: "FaPython" },
+      { name: "R", icon: "SiRstudio" },
+      { name: "Machine Learning", icon: "FaRobot" },
+      { name: "SQL", icon: "FaDatabase" },
+    ],
+  },
+];

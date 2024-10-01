@@ -31,10 +31,9 @@ export default function RootLayout({
         "m-0 h-full w-full overflow-x-hidden p-0",
       )}
     >
-      <body className="m-0 overflow-x-hidden p-0">
+      <body className="!m-0 !mr-0 !overflow-x-hidden p-0">
         <Providers>
           <CustomCursor />
-
           <Background />
           {children}
         </Providers>
