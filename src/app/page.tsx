@@ -2,6 +2,7 @@ import FluidDistortion from "@/components/Common/FluidDistortion";
 import ThemeSwitcher from "@/components/Common/ThemeSwitcher";
 import About from "@/components/Sections/About";
 import Education from "@/components/Sections/Education/Education";
+import Experience from "@/components/Sections/Experience";
 import Links from "@/components/Sections/Links";
 import Projects from "@/components/Sections/Projects/Projects";
 import SectionWrapper from "@/components/Sections/SectionWrapper";
@@ -22,6 +23,9 @@ export default function Home() {
         </SectionWrapper>
         <SectionWrapper title="Education">
           <Education />
+        </SectionWrapper>
+        <SectionWrapper title="Experience">
+          <Experience />
         </SectionWrapper>
         <SectionWrapper title="Projects">
           <Projects />
