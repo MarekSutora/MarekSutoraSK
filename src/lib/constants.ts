@@ -33,7 +33,7 @@ export const projects = [
       backend: "https://github.com/MarekSutora/physio-backend",
       frontend: "https://github.com/MarekSutora/physio-frontend",
     },
-    liveDemo: "https://www.mareksutora.online",
+    liveDemo: "https://physio-studio-website.vercel.app/",
   },
   {
     title: "Movie Search Web Application",
