@@ -11,7 +11,7 @@ const Projects = () => {
       {projects.map((project, index) => {
         return (
           <div key={index}>
-            <div className="group flex w-full flex-col gap-3 rounded-md border-neutral-900 bg-zinc-200 p-2 text-black shadow-sm transition-shadow duration-500 hover:shadow-2xl dark:border-zinc-300 dark:bg-neutral-800 dark:text-gray-100">
+            <div className="group flex w-full flex-col gap-3 rounded-md  bg-zinc-200 p-2 text-black shadow-sm transition-shadow duration-500 hover:shadow-2xl dark:bg-neutral-800 dark:text-gray-100">
               <div className="flex w-full flex-row items-center justify-between">
                 <h2 className="text-lg font-semibold">{project.title}</h2>
                 <span className="text-sm">{project.duration}</span>
@@ -120,7 +120,7 @@ const Projects = () => {
           </div>
         );
       })}
-      <div className="flex flex-row items-center justify-center gap-3 rounded-md border-[1px] border-zinc-300 bg-zinc-200 p-1 text-black shadow-sm dark:border-neutral-900 dark:bg-neutral-800 dark:text-gray-100">
+      <div className="flex flex-row items-center justify-center gap-3 rounded-md bg-zinc-200 p-1 text-black shadow-sm  dark:bg-neutral-800 dark:text-gray-100">
         For more details and more projects check out this PDF file:
         <a
           href="./projects-marek-sutora.pdf"

@@ -28,12 +28,12 @@ const ThemeSwitcher = () => {
   return (
     <button
       onClick={handleSetTheme}
-      className="p-2 rounded-full bg-zinc-300 dark:bg-zinc-900 fixed top-3 right-3 z-50"
+      className="z-50 rounded-full bg-zinc-300 p-1 dark:bg-zinc-900 h-9 w-9"
     >
       {theme === "dark" ? (
-        <SunIcon className="w-6 h-6 text-zinc-900 dark:text-zinc-300" />
+        <SunIcon className="text-zinc-900 dark:text-zinc-300" />
       ) : (
-        <MoonIcon className="w-6 h-6 text-zinc-900 dark:text-zinc-300" />
+        <MoonIcon className="text-zinc-900 dark:text-zinc-300" />
       )}
     </button>
   );
