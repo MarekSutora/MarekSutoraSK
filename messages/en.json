@@ -1,0 +1,6 @@
+{ 
+    "About": {
+        "title": "About",
+        "content": "This is a simple example of a multi-language site using Node.js and Express."
+    }
+}
