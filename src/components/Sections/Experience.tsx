@@ -53,7 +53,7 @@ const Experience = () => {
                 </DialogContent>
               </Dialog>
             </div>
-            {index == 0 && (
+            {index == 0 && experience.length > 1 && (
               <div className="my-auto mt-6 h-[1px] w-full rounded-full bg-zinc-700/60 dark:bg-zinc-700"></div>
             )}
           </div>
