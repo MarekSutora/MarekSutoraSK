@@ -59,7 +59,7 @@ const About = () => {
       </p>
       <p className="text-lg">
         In my free time, I enjoy working out, listening to music, watching TV
-        shows, movies, and various sports.
+        shows, movies, and various sports. I also like reading books and I used to be a huge gamer.
       </p>
     </div>
   );

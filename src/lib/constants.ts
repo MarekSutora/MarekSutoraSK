@@ -161,8 +161,9 @@ export const experience = [
     workType: "Full-time",
     duration: "September 2024 - Present",
     description:
-      "I am working mainly on backend solutions designed to handle streams of data from betting providers, forming the backbone of the Doxxbet platform. This data stream provides all the necessary information for customers to be able to place bets. In addition to backend development, I also sometimes work on a backoffice web application that supports internal operations. The system is built using a microservices architecture with Kafka for data streaming, .NET Core and .NET Framework for backend development, and MSSQL for data storage. We use Dapper for database interactions, and our workflows are managed with TeamCity and GitLab for CI/CD. We also monitor and troubleshoot data pipelines with Elasticsearch, Kibana, and Redis.",
+      "I am working mainly on backend solutions designed to handle streams of data from betting providers, forming the backbone of the Doxxbet platform. This data stream provides all the necessary information for customers to be able to place bets. In addition to backend development, I also sometimes work on a backoffice web application that supports internal operations.",
     technologies: [
+      { name: "Microservices" },
       { name: "C#", icon: "SiCsharp" },
       { name: ".NET Core", icon: "SiDotnet" },
       { name: ".NET Framework", icon: "SiDotnet" },
@@ -185,9 +186,9 @@ export const experience = [
     description:
       "I Worked on a telematics project, where I was mainly responsible for displaying real-time processed data on charts and interactive maps with markers and animations. Collaborated with a team of 8-11 members in an Agile environment with daily stand-ups and sprint planning, using Azure DevOps for project management.",
     technologies: [
+      { name: "Microservices" },
       { name: "C#", icon: "SiCsharp" },
       { name: "ASP.NET Core MVC", icon: "SiDotnet" },
-      { name: "Microservices" },
       { name: "REST API" },
       { name: "Dapper" },
       { name: "MSSQL", icon: "DiMsqlServer" },
