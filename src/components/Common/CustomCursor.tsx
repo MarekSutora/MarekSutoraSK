@@ -1,12 +1,12 @@
 "use client";
 
 import { useTheme } from "next-themes";
-import React, { useEffect, useState } from "react";
-import dynamic from "next/dynamic";
+import React, { useState, useEffect } from "react";
+import AnimatedCursor from "react-animated-cursor";
 
-const AnimatedCursor = dynamic(() => import("react-animated-cursor"), {
-  ssr: false,
-});
+// const AnimatedCursor = dynamic(() => import("react-animated-cursor"), {
+//   ssr: false,
+// });
 
 const CustomCursor = () => {
   const { resolvedTheme } = useTheme();
