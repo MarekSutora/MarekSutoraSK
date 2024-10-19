@@ -20,6 +20,8 @@ export const projects = [
         { name: "React", icon: "FaReact" },
         { name: "Tailwind CSS", icon: "SiTailwindcss" },
         { name: "TypeScript", icon: "SiTypescript" },
+        { name: "PrimeReact" },
+        { name: "shadcn/ui" },
       ],
       deployment: [
         { name: "Vercel", icon: "SiVercel" },

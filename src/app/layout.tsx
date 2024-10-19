@@ -5,7 +5,6 @@ import "./globals.css";
 import Background from "@/components/Common/Background";
 import Providers from "./Providers";
 import CustomCursor from "@/components/Common/CustomCursor";
-import FluidDistortion from "@/components/Common/FluidDistortion";
 import { cn } from "@/lib/utils";
 
 const manrope = Manrope({ subsets: ["latin"] });
