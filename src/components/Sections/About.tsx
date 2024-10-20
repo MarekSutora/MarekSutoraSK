@@ -4,8 +4,11 @@ import { IoIosMail } from "react-icons/io";
 import { FaGithub } from "react-icons/fa";
 import { IoMdDownload } from "react-icons/io";
 import Link from "next/link";
+import {useTranslations} from 'next-intl';
 
 const About = () => {
+  const t = useTranslations('About');
+
   return (
     <div className="flex flex-col gap-3 p-[1px]">
       <div className="flex flex-row flex-wrap gap-2">
@@ -47,11 +50,12 @@ const About = () => {
         </a>
       </div>
       <p className="text-lg">
-        Hey, I am Marek and I am a web developer with experience in both
+        {t('content')}
+        {/* Hey, I am Marek and I am a web developer with experience in both
         frontend and backend development.
         In each of these areas, I have worked with various technologies, programming languages and tools.
         I also have experience with working in a team and agile software
-        development.
+        development. */}
       </p>
       <p className="text-lg">
         I consider myself a reliable and hardworking person who has no problem

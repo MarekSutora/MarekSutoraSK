@@ -6,6 +6,8 @@ import Background from "@/components/Common/Background";
 import Providers from "./Providers";
 import CustomCursor from "@/components/Common/CustomCursor";
 import { cn } from "@/lib/utils";
+import { getLocale, getMessages } from "next-intl/server";
+import { NextIntlClientProvider } from "next-intl";
 
 const manrope = Manrope({ subsets: ["latin"] });
 //Rubik, Anek_Devanagari, Manrope, Arimo
@@ -16,15 +18,18 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
+  const locale = await getLocale();
+  const messages = await getMessages();
+
   return (
     <html
       suppressHydrationWarning
-      lang="en"
+      lang={locale}
       className={cn(
         manrope.className,
         "m-0 h-full w-full overflow-x-hidden p-0",
@@ -32,9 +37,11 @@ export default function RootLayout({
     >
       <body className="!m-0 !mr-0 !overflow-x-hidden p-0">
         <Providers>
-          <CustomCursor />
-          <Background />
-          {children}
+          <NextIntlClientProvider messages={messages}>
+            <CustomCursor />
+            <Background />
+            {children}
+          </NextIntlClientProvider>
         </Providers>
       </body>
     </html>
