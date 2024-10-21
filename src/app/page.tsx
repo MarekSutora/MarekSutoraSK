@@ -10,7 +10,7 @@ import Title from "@/components/Sections/Title";
 import {useTranslations} from 'next-intl';
 
 export default function Home() {
-  const t = useTranslations('About');
+  const t = useTranslations('Page');
 
 
   return (
@@ -25,16 +25,16 @@ export default function Home() {
         {/* <Links /> */}
       </div>
       <div className="m-auto flex w-11/12 flex-col items-center gap-6 md:w-5/6">
-        <SectionWrapper title={t('title')}>
+        <SectionWrapper title={t('About')}>
           <About />
         </SectionWrapper>
-        <SectionWrapper title="Education">
+        <SectionWrapper title={t('Education')}>
           <Education />
         </SectionWrapper>
-        <SectionWrapper title="Experience">
+        <SectionWrapper title={t('Experience')}>
           <Experience />
         </SectionWrapper>
-        <SectionWrapper title="Projects">
+        <SectionWrapper title={t('Projects')}>
           <Projects />
         </SectionWrapper>
       </div>

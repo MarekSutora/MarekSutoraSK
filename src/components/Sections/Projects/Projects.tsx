@@ -1,11 +1,16 @@
 import React from "react";
-import { projects } from "@/lib/constants";
+import { projectsEn, projectsSk } from "@/lib/constants";
 import Image from "next/image";
 import TechnologyBadge from "./TechnologyBadge";
 import ShimmerLink from "@/components/Common/ShimmerLink";
 import { IoMdDownload } from "react-icons/io";
+import { useLocale } from "next-intl";
 
 const Projects = () => {
+  const locale = useLocale();
+
+  const projects = locale === "sk" ? projectsSk : projectsEn;
+
   return (
     <div className="z-50 flex w-full flex-col gap-3">
       {projects.map((project, index) => {
@@ -84,7 +89,7 @@ const Projects = () => {
                     typeof project.sourceCode === "string" ? (
                       <ShimmerLink
                         href={project.sourceCode}
-                        text="Code"
+                        text={locale === "sk" ? "Kód" : "Code"}
                         iconName="FaGithub"
                       />
                     ) : (
@@ -93,7 +98,11 @@ const Projects = () => {
                           project.sourceCode.frontend && (
                             <ShimmerLink
                               href={project.sourceCode.frontend}
-                              text="Frontend Code"
+                              text={
+                                locale === "sk"
+                                  ? "Frontend kód"
+                                  : "Frontend Code"
+                              }
                               iconName="FaGithub"
                             />
                           )}
@@ -101,7 +110,9 @@ const Projects = () => {
                           project.sourceCode.backend && (
                             <ShimmerLink
                               href={project.sourceCode.backend}
-                              text="Backend Code"
+                              text={
+                                locale === "sk" ? "Backend kód" : "Backend Code"
+                              }
                               iconName="FaGithub"
                             />
                           )}
@@ -109,7 +120,7 @@ const Projects = () => {
                     )}
                     <ShimmerLink
                       href={project.liveDemo}
-                      text="Preview"
+                      text={locale === "sk" ? "Náhľad" : "Preview"}
                       iconName="FaExternalLinkAlt"
                       iconSize={16}
                     />
@@ -121,13 +132,16 @@ const Projects = () => {
         );
       })}
       <div className="flex flex-row items-center justify-center gap-3 rounded-md bg-zinc-200 p-1 text-black shadow-sm hover:shadow-2xl dark:bg-neutral-800 dark:text-gray-100">
-        For more details and more projects check out this PDF file:
+        {locale === "sk"
+          ? "Pre viac detailov a projektov si pozrite tento PDF súbor:"
+          : "For more details and more projects check out this PDF file:"}
         <a
           href="./projects-marek-sutora.pdf"
           className="z-50 flex flex-row items-center gap-1 rounded-2xl border-[1px] border-zinc-300 bg-zinc-200 px-2 py-1 shadow-sm transition-all duration-300 hover:bg-zinc-300 dark:border-neutral-800 dark:bg-neutral-900 dark:text-gray-300 dark:hover:bg-neutral-800"
           rel="noopener noreferrer"
         >
-          <IoMdDownload size={24} /> <span>My Projects</span>
+          <IoMdDownload size={24} />
+          <span>{locale === "sk" ? "Moje projekty" : "My Projects"}</span>
         </a>
       </div>
     </div>

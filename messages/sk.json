@@ -1,6 +1,14 @@
-{ 
-    "About": {
-        "title": "O mne",
-        "content": "test po slovensky."
-    }
+{
+  "Page": {
+    "About": "O mne",
+    "Education": "Vzdelanie",
+    "Experience": "Skúsenosti",
+    "Projects": "Projekty"
+  },
+  "About": {
+    "content-1": "Ahoj, volám sa Marek a som web developer so skúsenosťami v oblasti frontend aj backend vývoja. V každej z týchto oblastí som pracoval s rôznymi technológiami, programovacími jazykmi a nástrojmi. Mám tiež skúsenosti s prácou v tíme a agilným vývojom softvéru.",
+    "content-2": "Považujem sa za spoľahlivú a pracovitú osobu, ktorá nemá problém naučiť sa rôzne nové a užitočné technológie a nástroje.",
+    "content-3": "Vo voľnom čase rád cvičím, počúvam hudbu, sledujem televízne seriály, filmy a rôzne športy. Tiež rád čítam knihy a kedysi som trochu hrával počítačové hry.",
+    "my-projects": "Moje projekty"
+  }
 }

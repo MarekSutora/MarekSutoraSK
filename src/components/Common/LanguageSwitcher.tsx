@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import SlovakiaFlag from "@/root/public/flags/svk.svg";
-import UKFlag from "@/root/public/flags/uk.svg";
+import UKFlag from "@/root/public/flags/uk2.svg";
 import { useLocale } from "next-intl";
 import { useRouter } from "next/navigation";
 import {useTransition} from 'react';
@@ -24,9 +24,9 @@ const LanguageSwitcher = (props: Props) => {
   };
 
   return (
-    <button className="h-9 w-9 cursor-pointer" onClick={switchLocale}>
+    <button className="h-8 w-8 cursor-pointer" onClick={switchLocale}>
       <Image
-        src={locale === "sk" ? SlovakiaFlag : UKFlag}
+        src={locale === "sk" ? UKFlag : SlovakiaFlag}
         alt="Language Icon"
       />
     </button>

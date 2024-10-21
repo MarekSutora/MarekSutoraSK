@@ -4,10 +4,10 @@ import { IoIosMail } from "react-icons/io";
 import { FaGithub } from "react-icons/fa";
 import { IoMdDownload } from "react-icons/io";
 import Link from "next/link";
-import {useTranslations} from 'next-intl';
+import { useTranslations } from "next-intl";
 
 const About = () => {
-  const t = useTranslations('About');
+  const t = useTranslations("About");
 
   return (
     <div className="flex flex-col gap-3 p-[1px]">
@@ -46,25 +46,12 @@ const About = () => {
           className="z-50 flex flex-row items-center gap-1 rounded-2xl border-[1px] border-zinc-300 bg-zinc-200 px-2 py-1 shadow-md transition-all duration-300 hover:bg-zinc-300 dark:border-neutral-800 dark:bg-neutral-900 dark:text-gray-300 dark:hover:bg-neutral-800"
           rel="noopener noreferrer"
         >
-          <IoMdDownload size={24} /> <span>My Projects</span>
+          <IoMdDownload size={24} /> <span>{t("my-projects")}</span>
         </a>
       </div>
-      <p className="text-lg">
-        {t('content')}
-        {/* Hey, I am Marek and I am a web developer with experience in both
-        frontend and backend development.
-        In each of these areas, I have worked with various technologies, programming languages and tools.
-        I also have experience with working in a team and agile software
-        development. */}
-      </p>
-      <p className="text-lg">
-        I consider myself a reliable and hardworking person who has no problem
-        learning different new and interesting technologies and tools.
-      </p>
-      <p className="text-lg">
-        In my free time, I enjoy working out, listening to music, watching TV
-        shows, movies, and various sports. I also like reading books and I used to be a huge gamer.
-      </p>
+      <p className="text-lg">{t("content-1")}</p>
+      <p className="text-lg">{t("content-2")}</p>
+      <p className="text-lg">{t("content-3")}</p>
     </div>
   );
 };

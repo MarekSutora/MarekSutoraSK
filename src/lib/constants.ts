@@ -1,8 +1,8 @@
-export const projects = [
+export const projectsEn = [
   {
     title: "Physiotherapy Studio Information System",
     description:
-      "A robust web application designed for the management of a physiotherapy studio. It includes functionalities for managing reservations, clients, services, and a blog. The dashboard also provides charts for decision-making, with Google Maps and reservation filtering for the public section.",
+      "A robust web application designed for the presentation and management of a physiotherapy studio. It includes functionalities for managing reservations, clients, services, running a blog and providing statistics through charts.",
     technologies: {
       backend: [
         { name: "C#" },
@@ -20,6 +20,7 @@ export const projects = [
         { name: "React", icon: "FaReact" },
         { name: "Tailwind CSS", icon: "SiTailwindcss" },
         { name: "TypeScript", icon: "SiTypescript" },
+        { name: "Google Maps API", icon: "SiGooglemaps" },
         { name: "PrimeReact" },
         { name: "shadcn/ui" },
       ],
@@ -78,7 +79,86 @@ export const projects = [
   },
 ];
 
-export const education = [
+export const projectsSk = [
+  {
+    title: "Informačný systém pre Fyzioterapeutické štúdio",
+    description:
+      "Robustná responzívna webová aplikácia určená na prezentáciu a manažovanie fyzioterapeutického štúdia. Obsahuje funkcionalitu na manažovanie rezervácií, klientov, služieb, prevádzkovanie blogu a poskytovanie štatistík pomocou grafov.",
+    technologies: {
+      backend: [
+        { name: "C#" },
+        { name: "ASP.NET Core", icon: "SiDotnet" },
+        { name: "Entity Framework Core" },
+        { name: "MSSQL", icon: "DiMsqlServer" },
+        { name: "JWT" },
+        { name: "REST API" },
+        { name: "Monolitická architektúra" },
+      ],
+      frontend: [
+        { name: "Next.js", icon: "SiNextdotjs" },
+        { name: "React", icon: "FaReact" },
+        { name: "Tailwind CSS", icon: "SiTailwindcss" },
+        { name: "TypeScript", icon: "SiTypescript" },
+        { name: "Google Maps API", icon: "SiGooglemaps" },
+        { name: "PrimeReact" },
+        { name: "shadcn/ui" },
+      ],
+      deployment: [
+        { name: "Vercel", icon: "SiVercel" },
+        { name: "Microsoft Azure", icon: "SiMicrosoftazure" },
+      ],
+    },
+    duration: "2023-2024",
+    icon: "FaLaptopCode",
+    image: "/projects/dp.png",
+    sourceCode: {
+      backend: "https://github.com/MarekSutora/physio-backend",
+      frontend: "https://github.com/MarekSutora/physio-frontend",
+    },
+    liveDemo: "https://physio-studio-website.vercel.app/",
+  },
+  {
+    title: "Webová aplikácia na vyhľadávanie filmov",
+    description:
+      "Aplikácia filmovej databázy, kde používatelia môžu vyhľadávať filmy, zobraziť detaily a spravovať zoznam obľúbených. Integruje sa s OMDB API a ponúka nekonečné scrollovanie, responzívny dizajn a ukladanie obľúbených filmov v lokálnom úložisku.",
+    technologies: {
+      frontend: [
+        { name: "React", icon: "FaReact" },
+        { name: "TypeScript", icon: "SiTypescript" },
+        { name: "Chakra UI", icon: "SiChakraui" },
+        { name: "SCSS", icon: "FaSass" },
+        { name: "React Query" },
+        { name: "Vite", icon: "SiVite" },
+      ],
+      deployment: [{ name: "Vercel", icon: "SiVercel" }],
+    },
+    duration: "2024",
+    icon: "FaFilm",
+    image: "/projects/mvdb.png",
+    sourceCode: "https://github.com/MarekSutora/movie-database",
+    liveDemo: "https://movie-database-roan.vercel.app",
+  },
+  {
+    title: "Portfólio webstránka",
+    description:
+      "Osobná portfólio webstránka prezentujúca moje projekty, zručnosti a skúsenosti. Obsahuje tmavý režim, animácie a responzívny dizajn.",
+    technologies: {
+      all: [
+        { name: "Next.js", icon: "SiNextdotjs" },
+        { name: "React", icon: "FaReact" },
+        { name: "TypeScript", icon: "SiTypescript" },
+        { name: "Tailwind CSS", icon: "SiTailwindcss" },
+      ],
+    },
+    duration: "2024",
+    icon: "FaUser",
+    image: "/projects/prtfl.png",
+    sourceCode: "https://github.com/MarekSutora/MarekSutoraSK",
+    liveDemo: "https://www.mareksutora.sk",
+  },
+];
+
+export const educationEn = [
   {
     university: "University of Žilina",
     faculty: "Faculty of Management Science and Informatics",
@@ -105,7 +185,6 @@ export const education = [
       { name: "Modeling and Simulation" },
       { name: "Image Processing" },
       { name: "Medical Informatics" },
-      { name: "Healthcare Systems" },
       { name: "Reliability Engineering" },
       { name: "Cryptography" },
       { name: "Infomation Theory" },
@@ -156,7 +235,84 @@ export const education = [
   },
 ];
 
-export const experience = [
+export const educationSk = [
+  {
+    university: "Žilinská univerzita v Žiline",
+    faculty: "Fakulta riadenia a informatiky",
+    duration: "2021 - 2023",
+    degree: "Inžiniersky titul v odbore Biomedicínska informatika",
+    description:
+      "Inžiniersky program Biomedicínska informatika mi umožnil špecializovať sa na analýzu medicínskych dát, strojové učenie a vývoj aplikácií pre zdravotníctvo. Taktiež som pracoval na výskumnom projekte zameranom na simulácie mikrofluidiky.",
+    technologies: [
+      { name: "Python", icon: "FaPython" },
+      { name: "R" },
+      { name: "Oracle SQL", icon: "SiOracle" },
+      { name: "Matlab" },
+      { name: "React", icon: "FaReact" },
+      { name: "JavaScript", icon: "FaJsSquare" },
+      { name: "Node.js", icon: "FaNodeJs" },
+      { name: "Express.js" },
+      { name: "Microsoft Excel :)", icon: "SiMicrosoftexcel" },
+    ],
+    fields: [
+      { name: "Data mining" },
+      { name: "Strojové učenie" },
+      { name: "Bioinformatika" },
+      { name: "Simulácie mikrofluidiky" },
+      { name: "Modelovanie a simulácia" },
+      { name: "Spracovanie obrazu" },
+      { name: "Medicínska informatika" },
+      { name: "Teória spoľahlivosti" },
+      { name: "Kryptografia" },
+      { name: "Teória informácií" },
+      { name: "Fuzzy logika" },
+      { name: "Biológia a chémia pre informatiku" },
+    ],
+  },
+  {
+    university: "Žilinská univerzita v Žiline",
+    faculty: "Fakulta riadenia a informatiky",
+    duration: "2018 - 2021",
+    degree: "Bakalársky titul v odbore Informatika",
+    description:
+      "Bakalárske štúdium Informatiky mi poskytlo silný základ v oblasti informatiky. Počas štúdia som získal praktické skúsenosti s objektovo orientovaným programovaním, databázami, webovým vývojom a mnohým ďalším. Toto obdobie mi umožnilo vytvoriť niekoľko projektov, ktoré posilnili moje schopnosti riešiť problémy a využívať v rôzne technológie.",
+    technologies: [
+      { name: "C/C++" },
+      { name: "Java", icon: "FaJava" },
+      { name: "Oracle SQL", icon: "SiOracle" },
+      { name: "JavaScript", icon: "FaJsSquare" },
+      { name: "HTML", icon: "FaHtml5" },
+      { name: "CSS", icon: "FaCss3" },
+      { name: "PHP", icon: "FaPhp" },
+      { name: "R" },
+      { name: "Enterprise Architect" },
+      { name: "UML" },
+      { name: "Assembler" },
+      { name: "Microsoft Excel :)", icon: "SiMicrosoftexcel" },
+      { name: "Matlab" },
+    ],
+    fields: [
+      { name: "Web development" },
+      { name: "Algoritmy" },
+      { name: "Dátové štruktúry" },
+      { name: "Databázy" },
+      { name: "Teória grafov" },
+      { name: "Modelovanie a simulácia" },
+      { name: "Operačné systémy" },
+      { name: "Počítačové siete" },
+      { name: "Diskrétna matematika" },
+      { name: "Pravdepodobnosť a štatistika" },
+      { name: "Ekonomika" },
+      { name: "Softvérové modelovanie" },
+      { name: "Lineárna algebra" },
+      { name: "Matematická analýza" },
+      { name: "Objektovo orientované programovanie" },
+      { name: "Data Science" },
+    ],
+  },
+];
+
+export const experienceEn = [
   // {
   //   position: "Backend Developer",
   //   company: "Codium",
@@ -189,6 +345,32 @@ export const experience = [
       "I Worked on a telematics project, where I was mainly responsible for displaying real-time processed data on charts and interactive maps with markers and animations. Collaborated with a team of 8-11 members in an Agile environment with daily stand-ups and sprint planning, using Azure DevOps for project management.",
     technologies: [
       { name: "Microservices" },
+      { name: "C#", icon: "SiCsharp" },
+      { name: "ASP.NET Core MVC", icon: "SiDotnet" },
+      { name: "REST API" },
+      { name: "Dapper" },
+      { name: "MSSQL", icon: "DiMsqlServer" },
+      { name: "JavaScript", icon: "FaJs" },
+      { name: "HTML", icon: "FaHtml5" },
+      { name: "CSS", icon: "FaCss3" },
+      { name: "MapLibre" },
+      { name: "Azure DevOps", icon: "SiAzuredevops" },
+      { name: "Agile", icon: "FaBalanceScale" },
+      { name: "Scrum", icon: "FaTasks" },
+    ],
+  },
+];
+
+export const experienceSk = [
+  {
+    position: "Fullstack Developer",
+    company: "Descartes",
+    workType: "Stáž",
+    duration: "Júl 2022 - Jún 2024",
+    description:
+      "Pracoval som na projekte telematiky, kde som bol hlavne zodpovedný za zobrazovanie spracovaných dát v reálnom čase na grafoch a interaktívnych mapách s markermi a animáciami. Spolupracoval som s tímom 8-11 členov v Agile prostredí s dennými stand-upmi a plánovaním sprintov, pričom sme na riadenie projektov používali Azure DevOps.",
+    technologies: [
+      { name: "Mikroslužby" },
       { name: "C#", icon: "SiCsharp" },
       { name: "ASP.NET Core MVC", icon: "SiDotnet" },
       { name: "REST API" },

@@ -1,6 +1,6 @@
 import React from "react";
 import FriLogo from "./FriLogo";
-import { education } from "@/lib/constants";
+import { educationSk, educationEn } from "@/lib/constants";
 import {
   Dialog,
   DialogContent,
@@ -12,8 +12,13 @@ import {
 } from "@/components/ui/dialog";
 import TechnologyBadge from "../Projects/TechnologyBadge";
 import ShimmerButton from "@/components/Common/ShimmerButton";
+import { useLocale } from "next-intl";
 
 const Education = () => {
+  const locale = useLocale();
+
+  const education = locale === "sk" ? educationSk : educationEn;
+
   return (
     <div className="flex flex-row items-start justify-between">
       <div className="flex flex-grow flex-col gap-6 p-[1px]">
@@ -27,7 +32,7 @@ const Education = () => {
               <Dialog>
                 <DialogTrigger asChild>
                   <ShimmerButton
-                    text="Learn more"
+                    text={locale === "sk" ? "Viac info" : "More info"}
                     iconName="FaInfo"
                     iconSize={19}
                     className="z-50"
