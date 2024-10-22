@@ -1,4 +1,5 @@
 import FluidDistortion from "@/components/Common/FluidDistortion";
+import LanguageSwitcher from "@/components/Common/LanguageSwitcher";
 import ThemeSwitcher from "@/components/Common/ThemeSwitcher";
 import About from "@/components/Sections/About";
 import Education from "@/components/Sections/Education/Education";
@@ -6,12 +7,16 @@ import Experience from "@/components/Sections/Experience";
 import Projects from "@/components/Sections/Projects/Projects";
 import SectionWrapper from "@/components/Sections/SectionWrapper";
 import Title from "@/components/Sections/Title";
+import {useTranslations} from 'next-intl';
 
 export default function Home() {
+  const t = useTranslations('Page');
+
+
   return (
     <main className="z-[1] pb-5 text-black dark:text-zinc-300">
       <div className="fixed right-3 top-3 flex flex-row gap-2 z-50">
-        {/* <LanguageSwitcher /> */}
+        <LanguageSwitcher />
         <ThemeSwitcher />
       </div>
 
@@ -20,20 +25,20 @@ export default function Home() {
         {/* <Links /> */}
       </div>
       <div className="m-auto flex w-11/12 flex-col items-center gap-6 md:w-5/6">
-        <SectionWrapper title="About">
+        <SectionWrapper title={t('About')}>
           <About />
         </SectionWrapper>
-        <SectionWrapper title="Education">
+        <SectionWrapper title={t('Education')}>
           <Education />
         </SectionWrapper>
-        <SectionWrapper title="Experience">
+        <SectionWrapper title={t('Experience')}>
           <Experience />
         </SectionWrapper>
-        <SectionWrapper title="Projects">
+        <SectionWrapper title={t('Projects')}>
           <Projects />
         </SectionWrapper>
       </div>
-      <FluidDistortion />
+      {/* <FluidDistortion /> */}
     </main>
   );
 }

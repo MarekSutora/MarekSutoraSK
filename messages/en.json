@@ -1,6 +1,14 @@
-{ 
-    "About": {
-        "title": "About",
-        "content": "This is a simple example of a multi-language site using Node.js and Express."
-    }
+{
+  "Page": {
+    "About": "About",
+    "Education": "Education",
+    "Experience": "Experience",
+    "Projects": "Projects"
+  },
+  "About": {
+    "content-1": "Hey, I am Marek and I am a web developer with experience in both frontend and backend development. In each of these areas, I have worked with various technologies, programming languages and tools. I also have experience with working in a team and agile software development.",
+    "content-2": "I consider myself a reliable and hardworking person who has no problem learning different new and interesting technologies and tools.",
+    "content-3": "In my free time, I enjoy working out, listening to music, watching TV shows, movies, and various sports. I also like reading books and I used to be a huge gamer.",
+    "my-projects": "My Projects"
+  }
 }

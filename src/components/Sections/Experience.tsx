@@ -1,5 +1,5 @@
 import React from "react";
-import { experience } from "@/lib/constants";
+import { experienceSk, experienceEn } from "@/lib/constants";
 import {
   Dialog,
   DialogContent,
@@ -9,8 +9,13 @@ import {
 } from "@/components/ui/dialog";
 import ShimmerButton from "@/components/Common/ShimmerButton";
 import TechnologyBadge from "./Projects/TechnologyBadge";
+import { useLocale } from "next-intl";
 
 const Experience = () => {
+  const locale = useLocale();
+
+  const experience = locale === "sk" ? experienceSk : experienceEn;
+
   return (
     <div className="flex flex-row items-start justify-between">
       <div className="flex flex-grow flex-col gap-6 p-[1px]">
@@ -24,7 +29,7 @@ const Experience = () => {
               <Dialog>
                 <DialogTrigger asChild>
                   <ShimmerButton
-                    text="Learn more"
+                    text={locale === "sk" ? "Viac info" : "More info"}
                     iconName="FaInfo"
                     iconSize={19}
                     className="z-50"
@@ -33,7 +38,8 @@ const Experience = () => {
                 <DialogContent className="flex flex-col gap-3 border-neutral-900 bg-gray-200 text-black dark:bg-neutral-800 dark:text-gray-100">
                   <DialogHeader>
                     <h1 className="text-xl font-semibold">
-                      {item.position} at {item.company}
+                      {item.position} {locale === "sk" ? "v" : "at"}{" "}
+                      {item.company}
                     </h1>
                   </DialogHeader>
                   <DialogDescription className="text-base">
@@ -59,9 +65,7 @@ const Experience = () => {
           </div>
         ))}
       </div>
-      <div className="flex-shrink: 1 hidden md:block md:pt-6">
-        {/* Optional placeholder for future features */}
-      </div>
+      <div className="flex-shrink: 1 hidden md:block md:pt-6"></div>
     </div>
   );
 };
