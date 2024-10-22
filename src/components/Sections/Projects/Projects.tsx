@@ -141,7 +141,7 @@ const Projects = () => {
           rel="noopener noreferrer"
         >
           <IoMdDownload size={24} />
-          <span>{locale === "sk" ? "Moje projekty" : "My Projects"}</span>
+          <span className="text-nowrap">{locale === "sk" ? "Moje projekty" : "My Projects"}</span>
         </a>
       </div>
     </div>
