@@ -312,37 +312,39 @@ export const educationSk = [
   },
 ];
 
+//In addition to backend development, I also sometimes work on a backoffice web application that supports internal operations.
+
 export const experienceEn = [
-  // {
-  //   position: "Backend Developer",
-  //   company: "Codium",
-  //   workType: "Full-time",
-  //   duration: "September 2024 - Present",
-  //   description:
-  //     "I am working mainly on backend solutions designed to handle streams of data from betting providers, forming the backbone of the Doxxbet platform. This data stream provides all the necessary information for customers to be able to place bets. In addition to backend development, I also sometimes work on a backoffice web application that supports internal operations.",
-  //   technologies: [
-  //     { name: "Microservices" },
-  //     { name: "C#", icon: "SiCsharp" },
-  //     { name: ".NET Core", icon: "SiDotnet" },
-  //     { name: ".NET Framework", icon: "SiDotnet" },
-  //     { name: "Kafka", icon: "SiApachekafka" },
-  //     { name: "jQuery", icon: "SiJquery" },
-  //     { name: "MSSQL", icon: "DiMsqlServer" },
-  //     { name: "Dapper" },
-  //     { name: "TeamCity", icon: "SiJetbrains" },
-  //     { name: "GitLab", icon: "SiGitlab" },
-  //     { name: "Elasticsearch", icon: "SiElasticsearch" },
-  //     { name: "Kibana", icon: "SiKibana" },
-  //     { name: "Redis", icon: "SiRedis" },
-  //   ],
-  // },
+  {
+    position: ".NET Developer",
+    company: "Codium",
+    workType: "Full-time",
+    duration: "September 2024 - Present",
+    description:
+      "I am working on backend solutions designed to handle streams of data from betting providers, forming the backbone of the Doxxbet platform. This data stream provides all the necessary information for customers to be able to place bets.",
+    technologies: [
+      { name: "Microservices" },
+      { name: "C#", icon: "SiCsharp" },
+      { name: "ASP.NET Core", icon: "SiDotnet" },
+      { name: ".NET Framework", icon: "SiDotnet" },
+      { name: "Kafka", icon: "SiApachekafka" },
+      { name: "MSSQL", icon: "DiMsqlServer" },
+      { name: "Dapper" },
+      { name: "TeamCity", icon: "SiJetbrains" },
+      { name: "GitLab", icon: "SiGitlab" },
+      { name: "Elasticsearch", icon: "SiElasticsearch" },
+      { name: "Kibana", icon: "SiKibana" },
+      { name: "Redis", icon: "SiRedis" },
+      { name: "SignalR" },
+    ],
+  },
   {
     position: "Fullstack Developer",
     company: "Descartes",
     workType: "Internship",
     duration: "July 2022 - June 2024",
     description:
-      "I Worked on a telematics project, where I was mainly responsible for displaying real-time processed data on charts and interactive maps with markers and animations. Collaborated with a team of 8-11 members in an Agile environment with daily stand-ups and sprint planning, using Azure DevOps for project management.",
+      "I worked on a telematics project, where I was mainly responsible for displaying real-time processed data on charts and interactive maps with markers and animations using the MapLibre library (Mapbox fork). Collaborated in a team of 8-11 members in an Agile environment with daily stand-ups and sprint planning, using Azure DevOps for project management.",
     technologies: [
       { name: "Microservices" },
       { name: "C#", icon: "SiCsharp" },
@@ -363,12 +365,35 @@ export const experienceEn = [
 
 export const experienceSk = [
   {
+    position: ".NET Developer",
+    company: "Codium",
+    workType: "Full-time",
+    duration: "September 2024 - súčasnosť",
+    description:
+      "Pracujem na backendových riešeniach navrhnutých na spracovanie tokov dát od poskytovateľov stávkových dát, ktoré tvoria chrbticu platformy Doxxbet. Tento dátový tok poskytuje všetky potrebné informácie pre zákazníkov, aby mohli uzatvárať stávky.",
+    technologies: [
+      { name: "Microservices" },
+      { name: "C#", icon: "SiCsharp" },
+      { name: "ASP.NET Core", icon: "SiDotnet" },
+      { name: ".NET Framework", icon: "SiDotnet" },
+      { name: "Kafka", icon: "SiApachekafka" },
+      { name: "MSSQL", icon: "DiMsqlServer" },
+      { name: "Dapper" },
+      { name: "TeamCity", icon: "SiJetbrains" },
+      { name: "GitLab", icon: "SiGitlab" },
+      { name: "Elasticsearch", icon: "SiElasticsearch" },
+      { name: "Kibana", icon: "SiKibana" },
+      { name: "Redis", icon: "SiRedis" },
+      { name: "SignalR" },
+    ],
+  },
+  {
     position: "Fullstack Developer",
     company: "Descartes",
     workType: "Stáž",
     duration: "Júl 2022 - Jún 2024",
     description:
-      "Pracoval som na projekte telematiky, kde som bol hlavne zodpovedný za zobrazovanie spracovaných dát v reálnom čase na grafoch a interaktívnych mapách s markermi a animáciami. Spolupracoval som s tímom 8-11 členov v Agile prostredí s dennými stand-upmi a plánovaním sprintov, pričom sme na riadenie projektov používali Azure DevOps.",
+      "Pracoval som na projekte telematiky, kde som bol hlavne zodpovedný za zobrazovanie spracovaných dát v reálnom čase na grafoch a interaktívnych mapách s markermi a animáciami používajúc knižnicu MapLibre (Mapbox fork). Spolupracoval som s tímom 8-11 členov v Agilnom prostredí s dennými stand-upmi a plánovaním sprintov, pričom sme na riadenie projektov používali Azure DevOps.",
     technologies: [
       { name: "Mikroslužby" },
       { name: "C#", icon: "SiCsharp" },

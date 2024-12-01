@@ -3,7 +3,7 @@ import LanguageSwitcher from "@/components/Common/LanguageSwitcher";
 import ThemeSwitcher from "@/components/Common/ThemeSwitcher";
 import About from "@/components/Sections/About";
 import Education from "@/components/Sections/Education/Education";
-import Experience from "@/components/Sections/Experience";
+import Experience from "@/components/Sections/Experience/Experience";
 import Projects from "@/components/Sections/Projects/Projects";
 import SectionWrapper from "@/components/Sections/SectionWrapper";
 import Title from "@/components/Sections/Title";
@@ -37,7 +37,7 @@ export default function Home() {
           <Projects />
         </SectionWrapper>
       </div>
-      <FluidDistortion />
+      {/* <FluidDistortion /> */}
     </main>
   );
 }

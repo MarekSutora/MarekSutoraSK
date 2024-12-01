@@ -40,7 +40,7 @@
 
 .noise-bg {
   animation: bg-animation 0.25s infinite;
-  background-image: url("http://assets.iceable.com/img/noise-transparent.png");
+  background-image: url("../../public/noise/noise-transparent.png");
   pointer-events: none;
   position: fixed;
   will-change: auto;

@@ -7,6 +7,8 @@ import LogoBen from "@/root/public/faculty_logo/FRI_V_S_eng_cb.svg";
 import LogoWen from "@/root/public/faculty_logo/FRI_V_T_eng_biela.svg";
 import LogoBsk from "@/root/public/faculty_logo/FRI_V_S_sk_cb.svg";
 import LogoWsk from "@/root/public/faculty_logo/FRI_V_T_sk_biela.svg";
+import LogoCen from "@/root/public/faculty_logo/FRI_V_S_eng_f.svg";
+import LogoCsk from "@/root/public/faculty_logo/FRI_V_S_sk_f.svg";
 import { useLocale } from "next-intl";
 
 type Props = {};
@@ -26,14 +28,14 @@ const FriLogo = (props: Props) => {
 
   if (locale === "sk") {
     if (theme === "dark") {
-      return <Image src={LogoWsk} alt="uniza" width={370} priority />;
+      return <Image src={LogoCsk} alt="uniza" width={370} priority />;
     }
-    return <Image src={LogoBsk} alt="uniza" width={370} priority />;
+    return <Image src={LogoCsk} alt="uniza" width={370} priority />;
   } else {
     if (theme === "dark") {
-      return <Image src={LogoWen} alt="uniza" width={370} priority />;
+      return <Image src={LogoCen} alt="uniza" width={370} priority />;
     }
-    return <Image src={LogoBen} alt="uniza" width={370} priority />;
+    return <Image src={LogoCen} alt="uniza" width={370} priority />;
   }
 
   // if (theme === "dark") {
