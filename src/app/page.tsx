@@ -37,7 +37,7 @@ export default function Home() {
           <Projects />
         </SectionWrapper>
       </div>
-      {/* <FluidDistortion /> */}
+      <FluidDistortion />
     </main>
   );
 }

@@ -385,6 +385,7 @@ export const experienceSk = [
       { name: "Kibana", icon: "SiKibana" },
       { name: "Redis", icon: "SiRedis" },
       { name: "SignalR" },
+      { name: "gRPC"}
     ],
   },
   {
@@ -393,7 +394,7 @@ export const experienceSk = [
     workType: "Stáž",
     duration: "Júl 2022 - Jún 2024",
     description:
-      "Pracoval som na projekte telematiky, kde som bol hlavne zodpovedný za zobrazovanie spracovaných dát v reálnom čase na grafoch a interaktívnych mapách s markermi a animáciami používajúc knižnicu MapLibre (Mapbox fork). Spolupracoval som s tímom 8-11 členov v Agilnom prostredí s dennými stand-upmi a plánovaním sprintov, pričom sme na riadenie projektov používali Azure DevOps.",
+      "Pracoval som na projekte v oblasti telematiky, kde som bol hlavne zodpovedný za zobrazovanie v reálnom čase spracovaných dát na grafoch a interaktívnych mapách s markermi a animáciami používajúc knižnicu MapLibre (Mapbox fork). Spolupracoval som s tímom 8-11 členov v Agilnom prostredí s dennými stand-upmi a plánovaním sprintov, pričom sme na riadenie projektov používali Azure DevOps.",
     technologies: [
       { name: "Mikroslužby" },
       { name: "C#", icon: "SiCsharp" },
