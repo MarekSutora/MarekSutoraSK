@@ -5,6 +5,13 @@ import TechnologyBadge from "./TechnologyBadge";
 import ShimmerLink from "@/components/Common/ShimmerLink";
 import { IoMdDownload } from "react-icons/io";
 import { useLocale } from "next-intl";
+import { MdConstruction } from "react-icons/md";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 
 const Projects = () => {
   const locale = useLocale();
@@ -18,7 +25,30 @@ const Projects = () => {
           <div key={index}>
             <div className="flex w-full flex-col gap-3 rounded-md bg-zinc-200 p-2 text-black shadow-sm transition-shadow duration-500 hover:shadow-2xl dark:bg-neutral-800 dark:text-gray-100">
               <div className="flex w-full flex-row items-center justify-between">
-                <h2 className="text-lg font-semibold">{project.title}</h2>
+                <div className="flex flex-row items-center gap-2">
+                  {project.underConstruction === true ? (
+                    <TooltipProvider delayDuration={200}>
+                      <Tooltip>
+                        <TooltipTrigger asChild>
+                          <h2 className="flex items-center gap-2 text-lg font-semibold text-red-500">
+                            <MdConstruction className="text-2xl" />
+                            {project.title}
+                          </h2>
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p className="text-sm">
+                            {locale === "sk"
+                              ? "Práve na tom pracujem"
+                              : "Currently working on this"}
+                          </p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                  ) : (
+                    <h2 className="text-lg font-semibold">{project.title}</h2>
+                  )}
+                </div>
+
                 <span className="text-sm">{project.duration}</span>
               </div>
               <div className="flex flex-col gap-1 pl-1">
@@ -141,7 +171,9 @@ const Projects = () => {
           rel="noopener noreferrer"
         >
           <IoMdDownload size={24} />
-          <span className="text-nowrap">{locale === "sk" ? "Moje projekty" : "My Projects"}</span>
+          <span className="text-nowrap">
+            {locale === "sk" ? "Moje projekty" : "My Projects"}
+          </span>
         </a>
       </div>
     </div>

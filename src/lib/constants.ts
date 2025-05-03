@@ -1,5 +1,26 @@
 export const projectsEn = [
   {
+    title: "Partizánske Landmarks",
+    description:
+      "The final website should include an interactive map with markers representing landmarks from the Partizánske district. Additionally, each landmark will have its own dedicated page with information and photos.",
+    technologies: {
+      all: [
+        { name: "React", icon: "FaReact" },
+        { name: "TypeScript", icon: "SiTypescript" },
+        { name: "Tailwind CSS", icon: "SiTailwindcss" },
+        { name: "MapLibre", icon: "SiMaplibre" },
+        { name: "Framer Motion", icon: "SiFramer" },
+        { name: "React Router", icon: "SiReactrouter" },
+        { name: "Vite", icon: "SiVite" },
+      ],
+    },
+    duration: "2025",
+    icon: "FaUser",
+    image: "/projects/pampar.png",
+    liveDemo: "https://marek.ms-apps.online/",
+    underConstruction: true,
+  },
+  {
     title: "Physiotherapy Studio Information System",
     description:
       "A robust web application designed for the presentation and management of a physiotherapy studio. It includes functionalities for managing reservations, clients, services, running a blog and providing statistics through charts.",
@@ -81,6 +102,27 @@ export const projectsEn = [
 
 export const projectsSk = [
   {
+    title: "Pamiatky partizánske",
+    description:
+      "Výsledná stránka by mala obsahovať interaktívnu mapu s markermi predstavujúcimi pamiatky z okresu Partizánske. Okrem toho by mala obsahovať pre každú pamiatku vlastnú stránku s informáciami a fotkami.",
+    technologies: {
+      all: [
+        { name: "React", icon: "FaReact" },
+        { name: "TypeScript", icon: "SiTypescript" },
+        { name: "Tailwind CSS", icon: "SiTailwindcss" },
+        { name: "MapLibre", icon: "SiMaplibre" },
+        { name: "Framer Motion", icon: "SiFramer" },
+        { name: "React Router", icon: "SiReactrouter" },
+        { name: "Vite", icon: "SiVite" },
+      ],
+    },
+    duration: "2025",
+    icon: "FaUser",
+    image: "/projects/pampar.png",
+    liveDemo: "https://marek.ms-apps.online/",
+    underConstruction: true,
+  },
+  {
     title: "Informačný systém pre Fyzioterapeutické štúdio",
     description:
       "Robustná responzívna webová aplikácia určená na prezentáciu a manažovanie fyzioterapeutického štúdia. Obsahuje funkcionalitu na manažovanie rezervácií, klientov, služieb, prevádzkovanie blogu a poskytovanie štatistík pomocou grafov.",
@@ -154,7 +196,7 @@ export const projectsSk = [
     icon: "FaUser",
     image: "/projects/prtfl.png",
     sourceCode: "https://github.com/MarekSutora/MarekSutoraSK",
-    liveDemo: "https://www.mareksutora.sk",
+    liveDemo: "https://mareksutora.sk",
   },
 ];
 
@@ -385,7 +427,7 @@ export const experienceSk = [
       { name: "Kibana", icon: "SiKibana" },
       { name: "Redis", icon: "SiRedis" },
       { name: "SignalR" },
-      { name: "gRPC"}
+      { name: "gRPC" },
     ],
   },
   {
