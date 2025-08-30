@@ -17,7 +17,7 @@ export const projectsEn = [
     duration: "2025",
     icon: "FaUser",
     image: "/projects/pampar.png",
-    liveDemo: "https://marek.ms-apps.online/",
+    liveDemo: "https://pam-par.ms-apps.online/",
     underConstruction: true,
   },
   {
@@ -119,7 +119,7 @@ export const projectsSk = [
     duration: "2025",
     icon: "FaUser",
     image: "/projects/pampar.png",
-    liveDemo: "https://marek.ms-apps.online/",
+    liveDemo: "https://pam-par.ms-apps.online/",
     underConstruction: true,
   },
   {
