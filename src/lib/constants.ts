@@ -57,7 +57,7 @@ export const projectsEn = [
       backend: "https://github.com/MarekSutora/physio-backend",
       frontend: "https://github.com/MarekSutora/physio-frontend",
     },
-    liveDemo: "https://physio-studio-website.vercel.app/",
+    liveDemo: "https://physio-app.ms-apps.online",
   },
   {
     title: "Movie Search Web Application",
@@ -78,7 +78,7 @@ export const projectsEn = [
     icon: "FaFilm",
     image: "/projects/mvdb.png",
     sourceCode: "https://github.com/MarekSutora/movie-database",
-    liveDemo: "https://movie-database-roan.vercel.app",
+    liveDemo: "https://movie-db.ms-apps.online",
   },
   {
     title: "Portfolio Website",
@@ -157,7 +157,7 @@ export const projectsSk = [
       backend: "https://github.com/MarekSutora/physio-backend",
       frontend: "https://github.com/MarekSutora/physio-frontend",
     },
-    liveDemo: "https://physio-studio-website.vercel.app/",
+    liveDemo: "https://physio-app.ms-apps.online",
   },
   {
     title: "Webová aplikácia na vyhľadávanie filmov",
@@ -178,7 +178,7 @@ export const projectsSk = [
     icon: "FaFilm",
     image: "/projects/mvdb.png",
     sourceCode: "https://github.com/MarekSutora/movie-database",
-    liveDemo: "https://movie-database-roan.vercel.app",
+    liveDemo: "https://movie-db.ms-apps.online",
   },
   {
     title: "Portfólio webstránka",
