@@ -18,7 +18,7 @@ const jsonLd = {
     "https://www.linkedin.com/in/marek-%C5%A1%C3%BAtora-9867b4269/",
     "https://github.com/mareksutora",
   ],
-  jobTitle: "Software Engineer",
+  jobTitle: "Software Developer",
 };
 
 export default function Home() {
