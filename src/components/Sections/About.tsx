@@ -42,7 +42,7 @@ const About = () => {
         </a>
 
         <a
-          href="./projects-marek-sutora.pdf"
+          href="./projects-and-work-experience-marek-sutora.pdf"
           className="z-50 flex flex-row items-center gap-1 rounded-2xl border-[1px] border-zinc-300 bg-zinc-200 px-2 py-1 shadow-md transition-all duration-300 hover:bg-zinc-300 dark:border-neutral-800 dark:bg-neutral-900 dark:text-gray-300 dark:hover:bg-neutral-800"
           rel="noopener noreferrer"
         >

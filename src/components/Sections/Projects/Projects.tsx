@@ -80,10 +80,7 @@ const Projects = () => {
                   <ul className="flex flex-row flex-wrap gap-1">
                     {project.technologies.deployment.map((tech, index) => (
                       <li key={index}>
-                        <TechnologyBadge
-                          iconName={tech.icon}
-                          technologyName={tech.name}
-                        />
+                        <TechnologyBadge technologyName={tech.name} />
                       </li>
                     ))}
                   </ul>
@@ -161,7 +158,7 @@ const Projects = () => {
           </div>
         );
       })}
-      <div className="flex flex-row items-center justify-center gap-3 rounded-md bg-zinc-200 p-1 text-black shadow-sm hover:shadow-2xl dark:bg-neutral-800 dark:text-gray-100">
+      {/* <div className="flex flex-row items-center justify-center gap-3 rounded-md bg-zinc-200 p-1 text-black shadow-sm hover:shadow-2xl dark:bg-neutral-800 dark:text-gray-100">
         {locale === "sk"
           ? "Pre viac detailov a projektov si pozrite tento PDF súbor:"
           : "For more details and more projects check out this PDF file:"}
@@ -175,7 +172,7 @@ const Projects = () => {
             {locale === "sk" ? "Moje projekty" : "My Projects"}
           </span>
         </a>
-      </div>
+      </div> */}
     </div>
   );
 };

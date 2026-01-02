@@ -15,8 +15,8 @@ const Title = () => {
         love_Ya_Like_A_Sister.className,
       )}
     >
-      <p className="z-50 text-6xl md:text-huge">Marek Šútora</p>
-      <p className="z-50 text-3xl md:text-6xl">Web Developer</p>
+      <h1 className="z-50 text-6xl md:text-huge">Marek Šútora</h1>
+      <h2 className="z-50 text-3xl md:text-6xl">Web Developer</h2>
     </section>
   );
 };

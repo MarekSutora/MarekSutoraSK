@@ -9,11 +9,30 @@ import SectionWrapper from "@/components/Sections/SectionWrapper";
 import Title from "@/components/Sections/Title";
 import { useTranslations } from "next-intl";
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Marek Šútora",
+  url: "https://www.mareksutora.sk",
+  sameAs: [
+    "https://www.linkedin.com/in/marek-%C5%A1%C3%BAtora-9867b4269/",
+    "https://github.com/mareksutora",
+  ],
+  jobTitle: "Software Engineer",
+};
+
 export default function Home() {
   const t = useTranslations("Page");
 
   return (
     <main className="z-[1] pb-5 text-black dark:text-zinc-300">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
+        }}
+      />
+
       <div className="fixed right-3 top-3 z-50 flex flex-row gap-2">
         <LanguageSwitcher />
         <ThemeSwitcher />

@@ -10,11 +10,60 @@ import { getLocale, getMessages } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
 
 const manrope = Manrope({ subsets: ["latin"] });
-//Rubik, Anek_Devanagari, Manrope, Arimo
+const siteUrl = "https://mareksutora.sk";
+
 export const metadata: Metadata = {
-  title: "Marek Šútora",
-  icons: {
-    icon: "/ms.svg",
+  metadataBase: new URL(siteUrl),
+
+  title: {
+    default: "Marek Šútora — Software Engineer | Portfolio",
+    template: "%s — Marek Šútora",
+  },
+
+  description:
+    "Marek Šútora — software engineer. Portfolio, projects, experience, and contact information.",
+
+  alternates: {
+    canonical: siteUrl,
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
+
+  icons: { icon: "/ms.svg" },
+
+  openGraph: {
+    type: "website",
+    url: siteUrl,
+    title: "Marek Šútora — Software Engineer | Portfolio",
+    description:
+      "Portfolio website of Marek Šútora — projects, experience, and contact.",
+    siteName: "Marek Šútora",
+    images: [
+      {
+        url: "/og.png",
+        width: 1200,
+        height: 630,
+        alt: "Marek Šútora — Portfolio",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Marek Šútora — Software Engineer | Portfolio",
+    description:
+      "Portfolio website of Marek Šútora — projects, experience, and contact.",
+    images: ["/og.png"],
   },
 };
 
