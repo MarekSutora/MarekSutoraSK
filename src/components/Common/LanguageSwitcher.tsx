@@ -28,6 +28,9 @@ const LanguageSwitcher = (props: Props) => {
       <Image
         src={locale === "sk" ? UKFlag : SlovakiaFlag}
         alt="Language Icon"
+        priority={false}
+        placeholder="blur"
+        blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQ..."
       />
     </button>
   );

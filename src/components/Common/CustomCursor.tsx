@@ -10,13 +10,15 @@ import AnimatedCursor from "react-animated-cursor";
 
 const CustomCursor = () => {
   const { resolvedTheme } = useTheme();
+  const [isDesktop, setIsDesktop] = useState(false);
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
     setIsClient(true);
+    setIsDesktop(window.innerWidth > 1024);
   }, []);
 
-  if (!isClient) return null;
+  if (!isClient || !isDesktop) return null;
 
   return (
     <AnimatedCursor

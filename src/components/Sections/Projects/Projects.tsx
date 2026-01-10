@@ -109,6 +109,9 @@ const Projects = () => {
                       alt={project.title}
                       fill
                       className="rounded-md border border-zinc-300 object-cover shadow-sm"
+                      priority={false}
+                      placeholder="blur"
+                      blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQ..."
                     />
                   </div>
                   <div className="flex flex-row gap-1">

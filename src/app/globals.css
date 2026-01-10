@@ -39,7 +39,7 @@
 }
 
 .noise-bg {
-  animation: bg-animation 0.25s infinite;
+  animation: bg-animation 0.7s infinite;
   background-image: url("../../public/noise/noise-transparent.png");
   pointer-events: none;
   position: fixed;
