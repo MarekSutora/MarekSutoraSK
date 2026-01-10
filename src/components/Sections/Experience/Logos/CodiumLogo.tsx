@@ -8,8 +8,19 @@ type Props = {};
 const CodiumLogo = (props: Props) => {
   return (
     <div className="flex flex-col items-center justify-center">
-      <Image src={CodiumLogoImg} alt="Codium logo" width={70} />
-      <Image src={CodiumLogoText} alt="Codium logo text" width={70} className="pt-1"/>
+      <Image
+        src={CodiumLogoImg}
+        alt="Codium logo"
+        width={70}
+        priority={false}
+      />
+      <Image
+        src={CodiumLogoText}
+        alt="Codium logo text"
+        width={70}
+        className="pt-1"
+        priority={false}
+      />
     </div>
   );
 };

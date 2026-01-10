@@ -28,14 +28,50 @@ const FriLogo = (props: Props) => {
 
   if (locale === "sk") {
     if (theme === "dark") {
-      return <Image src={LogoCsk} alt="uniza" width={370} priority />;
+      return (
+        <Image
+          src={LogoCsk}
+          alt="uniza"
+          width={370}
+          priority={false}
+          placeholder="blur"
+          blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQ..."
+        />
+      );
     }
-    return <Image src={LogoCsk} alt="uniza" width={370} priority />;
+    return (
+      <Image
+        src={LogoCsk}
+        alt="uniza"
+        width={370}
+        priority={false}
+        placeholder="blur"
+        blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQ..."
+      />
+    );
   } else {
     if (theme === "dark") {
-      return <Image src={LogoCen} alt="uniza" width={370} priority />;
+      return (
+        <Image
+          src={LogoCen}
+          alt="uniza"
+          width={370}
+          priority={false}
+          placeholder="blur"
+          blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQ..."
+        />
+      );
     }
-    return <Image src={LogoCen} alt="uniza" width={370} priority />;
+    return (
+      <Image
+        src={LogoCen}
+        alt="uniza"
+        width={370}
+        priority={false}
+        placeholder="blur"
+        blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQ..."
+      />
+    );
   }
 
   // if (theme === "dark") {

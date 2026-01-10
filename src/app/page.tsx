@@ -6,9 +6,8 @@ import Experience from "@/components/Sections/Experience/Experience";
 import Projects from "@/components/Sections/Projects/Projects";
 import SectionWrapper from "@/components/Sections/SectionWrapper";
 import Title from "@/components/Sections/Title";
+import FluidWrapper from "@/components/Common/FluidWrapper";
 import { useTranslations } from "next-intl";
-import dynamic from "next/dynamic";
-import { useEffect, useState } from "react";
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -21,14 +20,6 @@ const jsonLd = {
   ],
   jobTitle: "Software Developer",
 };
-
-const FluidDistortion = dynamic(
-  () => import("@/components/Common/FluidDistortion"),
-  {
-    ssr: false,
-    loading: () => null,
-  },
-);
 
 export default function Home() {
   const t = useTranslations("Page");
@@ -65,7 +56,7 @@ export default function Home() {
           <Projects />
         </SectionWrapper>
       </div>
-      <FluidDistortion />
+      <FluidWrapper />
     </main>
   );
 }
