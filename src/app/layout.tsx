@@ -25,6 +25,10 @@ export const metadata: Metadata = {
 
   alternates: {
     canonical: siteUrl,
+    languages: {
+      sk: siteUrl,
+      en: `${siteUrl}/en`,
+    },
   },
 
   robots: {

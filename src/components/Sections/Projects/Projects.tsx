@@ -3,7 +3,6 @@ import { projectsEn, projectsSk } from "@/lib/constants";
 import Image from "next/image";
 import TechnologyBadge from "./TechnologyBadge";
 import ShimmerLink from "@/components/Common/ShimmerLink";
-import { IoMdDownload } from "react-icons/io";
 import { useLocale } from "next-intl";
 import { MdConstruction } from "react-icons/md";
 import {
