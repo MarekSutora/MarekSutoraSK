@@ -107,7 +107,7 @@ body[style] {
 }
 
 .group-hover:animate-shake {
-  animation: shake 0.5s;
+  animation: shake 0.25s;
   animation-timing-function: ease-in-out;
 }
 
