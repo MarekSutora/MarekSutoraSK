@@ -23,12 +23,44 @@ export const metadata: Metadata = {
   description:
     "Marek Šútora — software engineer. Portfolio, projects, experience, and contact information.",
 
+  keywords: [
+    "Marek Šútora",
+    "Software Engineer",
+    "Full Stack Developer",
+    ".NET Developer",
+    "Backend Developer",
+    "Frontend Developer",
+    "Web Developer",
+    "Portfolio",
+    "React",
+    "Next.js",
+    "TypeScript",
+  ],
+
+  authors: [{ name: "Marek Šútora", url: siteUrl }],
+
+  creator: "Marek Šútora",
+
   alternates: {
     canonical: siteUrl,
-    languages: {
-      sk: siteUrl,
-      en: `${siteUrl}/en`,
-    },
+  },
+
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    alternateLocale: "sk_SK",
+    url: siteUrl,
+    siteName: "Marek Šútora Portfolio",
+    title: "Marek Šútora — Software Engineer | Portfolio",
+    description:
+      "Marek Šútora — software engineer. Portfolio, projects, experience, and contact information.",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Marek Šútora — Software Engineer | Portfolio",
+    description:
+      "Marek Šútora — software engineer. Portfolio, projects, experience, and contact information.",
   },
 
   robots: {
@@ -44,31 +76,6 @@ export const metadata: Metadata = {
   },
 
   icons: { icon: "/ms.svg" },
-
-  openGraph: {
-    type: "website",
-    url: siteUrl,
-    title: "Marek Šútora — Software Engineer | Portfolio",
-    description:
-      "Portfolio website of Marek Šútora — projects, experience, and contact.",
-    siteName: "Marek Šútora",
-    images: [
-      {
-        url: "/og.png",
-        width: 1200,
-        height: 630,
-        alt: "Marek Šútora — Portfolio",
-      },
-    ],
-  },
-
-  twitter: {
-    card: "summary_large_image",
-    title: "Marek Šútora — Software Engineer | Portfolio",
-    description:
-      "Portfolio website of Marek Šútora — projects, experience, and contact.",
-    images: ["/og.png"],
-  },
 };
 
 export default async function RootLayout({
